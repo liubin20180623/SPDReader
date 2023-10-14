@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/app.ico</file>
+        <file>Images/Close.png</file>
+        <file>Images/GIGABYTE.ico</file>
+        <file>Images/MaximizeMax.png</file>
+        <file>Images/MaximizeMin.png</file>
+        <file>Images/Minimize.png</file>
+        <file>qss/MainWidget.css</file>
+    </qresource>
+</RCC>

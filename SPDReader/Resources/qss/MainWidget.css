@@ -1,0 +1,264 @@
+﻿QLabel#Title_App {
+    min-height: 10px;
+    font-family: "Ubuntu";
+    font-size: 18px;
+    color: white;
+}
+
+QLabel#icon_logo {
+    /*background-color: #999999;*/
+    border-image: url(:/Images/logo.png);
+    min-width: 200px;
+    min-height: 40px;
+}
+
+QWidget#TopWidget {
+    background-color: #303456;
+}
+
+QWidget#CenterWidget {
+    background-color: #252525;
+}
+
+QWidget#BottomWidget {
+    background-color: #252525;
+}
+
+QPushButton#MinimizeButton {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 30px;
+    border: none;
+    background-color: transparent;
+    qproperty-icon: url(:/Images/Minimize.png);
+    qproperty-iconSize: 16px 16px;
+}
+
+QPushButton#MinimizeButton:hover {
+    background-color: #505050;
+}
+
+QPushButton#MinimizeButton:pressed {
+    background-color: transparent;
+}
+
+QPushButton#ZoomButton {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+QPushButton#ZoomButton[State="Max"] {
+    qproperty-icon: url(:/Images/MaximizeMin.png);
+    qproperty-iconSize: 16px 16px;
+}
+
+QPushButton#ZoomButton[State="Min"] {
+    qproperty-icon: url(:/Images/MaximizeMax.png);
+    qproperty-iconSize: 16px 16px;
+}
+
+QPushButton#ZoomButton:hover {
+    background-color: #505050;
+}
+
+QPushButton#ZoomButton:pressed {
+    background-color: transparent;
+}
+
+QPushButton#CloseButton {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 30px;
+    border: none;
+    background-color: transparent;
+    qproperty-icon: url(:/Images/Close.png);
+    qproperty-iconSize: 16px 16px;
+}
+
+QPushButton#CloseButton:hover {
+    background-color: #d71526;
+}
+
+QPushButton#CloseButton:pressed {
+    background-color: transparent;
+}
+
+QLCDNumber{
+    color:white;
+    border:none;
+}
+
+
+/*QTableView*/
+QTableView, QListView, QListWidget, QTreeView, QTreeWidget, QColumnView
+{
+    background-color: rgba(25,25,25,100%);
+    alternate-background-color:rgba(20,88,123,40%);
+    border:none;
+    border-color: rgba(77,115,139,50%);
+    color:white;
+    gridline-color: rgb(42,42, 42);
+    qproperty-dragEnabled:"false";
+    qproperty-sortingEnabled:"false";
+    qproperty-showGrid:"true";
+    qproperty-alternatingRowColors: "false";
+    qproperty-focusPolicy:"Qt::NoFocus";
+    qproperty-editTriggers:"QAbstractItemView::NoEditTriggers";
+    qproperty-selectionBehavior:"QAbstractItemView::SelectRows";
+    qproperty-selectionMode:"QAbstractItemView::SingleSelection";
+    qproperty-horizontalScrollBarPolicy:"Qt::ScrollBarAsNeeded";
+    qproperty-verticalScrollBarPolicy:"Qt::ScrollBarAsNeeded";
+    qproperty-horizontalScrollMode:"QAbstractItemView::ScrollPerPixel";
+    qproperty-verticalScrollMode:"QAbstractItemView::ScrollPerPixel";
+    selection-color:#000;
+}
+QTableView::item:selected, QListView::item:selected, QListWidget::item:selected
+{
+    background-color:rgba(237,210,58,40%);
+    border: none;
+}
+QTableView::indicator:checked, QListView::indicator:checked, QListWidget::indicator:checked
+{
+    border-image:url(":/Resource/Image/MainForm/select_checked.png");
+}
+QTableView::indicator:unchecked, QListView::indicator:unchecked, QListWidget::indicator:unchecked
+{
+    border-image:url(":/Resource/Image/MainForm/select.png");
+}
+
+/*QHeaderView*/
+QHeaderView
+{
+    border:none;
+    qproperty-showSortIndicator:"true";
+}
+QHeaderView::section
+{
+    border: none;
+    height: 12px;
+    background-color:rgba(16,100,159,90%);
+    color:white;
+    font-size: 12px;
+    font-weight: 400;
+}
+QHeaderView::section:hover
+{
+    background-color:rgba(16,100,159,80%);
+}
+QHeaderView::section:pressed
+{
+    background-color:rgba(16,100,159,100%);
+}
+QHeaderView::down-arrow
+{
+    image: url(":/Resource/Image/MainForm/sort_down.png");
+    margin-right: 2px;
+    subcontrol-position: right;
+}
+QHeaderView::up-arrow
+{
+    image: url(":/Resource/Image/MainForm/sort_up.png");
+    margin-right: 2px;
+    subcontrol-position: right;
+}
+
+/* 滚动条 */
+QScrollBar:vertical
+{
+    width:8px;
+    background-color: transparent;
+    margin:0px,0px,0px,0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+QScrollBar::handle:vertical
+{
+    width:8px;
+    background:rgba(130,130,130,50%);
+    border-radius:4px;
+    min-height:20;
+}
+
+QScrollBar::handle:vertical:hover
+{
+    width:8px;
+    background:rgba(130,130,130,75%);
+    border-radius:4px;
+    min-height:20;
+}
+
+QScrollBar::handle:vertical:pressed
+{
+    width:8px;
+    background:rgba(223,74,22,100%);
+    border-radius:4px;
+    min-height:20;
+}
+
+/* 上下箭头的边框 */
+QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical
+{
+    background: transparent;
+    border: none;
+}
+
+/* 滚动条背景 */
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+{
+    width: 0px;
+    background: transparent;
+    border: none;
+}
+
+QScrollBar:horizontal
+{
+    height:8px;
+    background-color: transparent;
+    margin:0px,0px,0px,0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+QScrollBar::handle:horizontal
+{
+    height:8px;
+    background:rgba(130,130,130,50%);
+    border-radius:4px;
+    min-width:20;
+}
+
+QScrollBar::handle:horizontal:hover
+{
+    height:8px;
+    background:rgba(130,130,130,75%);
+    border-radius:4px;
+    min-width:20;
+}
+
+QScrollBar::handle:horizontal:pressed
+{
+    height:8px;
+    background:rgba(223,74,22,100%);
+    border-radius:4px;
+    min-width:20;
+}
+
+
+/* 左右箭头的边框 */
+QScrollBar::add-line:horizontal,QScrollBar::sub-line:horizontal
+{
+    background: transparent;
+    border: none;
+}
+
+/* 滚动条背景 */
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal
+{
+    height: 0px;
+    background: transparent;
+    border: none;
+}
